@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/data_loader.js"></script>
+  <title>I tuoi farmaci</title>
+</head>
+<body>
+  <div class="title-bar">
+    <h1 id="title">I tuoi farmaci</h1>
+    <input type="search" id="search-input" name="search" placeholder="Cerca..." oninput="print()">
+    <button id="search-button" type="submit">
+      <img src="icons/search_icon.svg" alt="search">
+    </button>
+      
+  </div>
+  <div class="pharma-container">
+    <template id="pharma">
+      <div class="pharma">
+        <div class="pharma-chin">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <a href="/scan" class="float">
+    <img src="icons/bar_code.svg" alt="Bar code">
+  </a>
+    
+  <script src="js/search_bar.js"></script>
+
+</body>
+</html>
